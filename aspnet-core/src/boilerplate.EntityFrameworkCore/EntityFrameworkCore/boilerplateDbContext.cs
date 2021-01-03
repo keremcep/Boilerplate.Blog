@@ -3,7 +3,7 @@ using Abp.Zero.EntityFrameworkCore;
 using boilerplate.Authorization.Roles;
 using boilerplate.Authorization.Users;
 using boilerplate.MultiTenancy;
-using System.Threading.Tasks;
+using boilerplate.BlogEntities;
 
 namespace boilerplate.EntityFrameworkCore
 {

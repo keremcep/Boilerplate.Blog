@@ -9,24 +9,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace boilerplate.Tasks
+namespace boilerplate.BlogEntities
 {
     [Table("AppTasks")]
     public class Task : Entity, IHasCreationTime
     {
         public const int MaxTitleLength = 256;
-        public const int MaxDescriptionLength = 64 * 1024; //64KB
+        public const int MaxDescriptionLenth = 64 * 1024;
 
         [Required]
         [StringLength(MaxTitleLength)]
         public string Title { get; set; }
-
-        [StringLength(MaxDescriptionLength)]
+        [StringLength(MaxDescriptionLenth)]
         public string Description { get; set; }
-
+        public TaskState State { get; set; } 
         public DateTime CreationTime { get; set; }
-
-        public TaskState State { get; set; }
 
         public Task()
         {
@@ -42,7 +39,7 @@ namespace boilerplate.Tasks
         }
     }
 
-    public enum TaskState : byte
+    public enum TaskState: byte
     {
         Open = 0,
         Completed = 1

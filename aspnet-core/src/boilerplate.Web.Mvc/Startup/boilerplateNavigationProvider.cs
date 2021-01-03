@@ -23,6 +23,13 @@ namespace boilerplate.Web.Startup
                     )
                 ).AddItem(
                     new MenuItemDefinition(
+                        "TaskList",
+                        L("TaskList"),
+                        url: "Tasks",
+                        icon: "fas fa-tasks"
+                    )
+                ).AddItem(
+                    new MenuItemDefinition(
                         PageNames.Tenants,
                         L("Tenants"),
                         url: "Tenants",

@@ -101,5 +101,8 @@
     <text name="CurrentPassword">Mevcut şifreniz</text>
     <text name="NewPassword">Yeni şifre</text>
     <text name="ConfirmNewPassword">Yeni şifreyi doğrula</text>
+    <text name="TaskList">Görev Listesi</text>
+    <text name="TaskState_Open">Açık</text>
+    <text name="TaskState_Completed">Tamamlandı</text>
   </texts>
 </localizationDictionary>
